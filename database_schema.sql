@@ -26,3 +26,7 @@ CREATE TABLE ComplianceTraining (
     employee_id INT,
     date_complete DATE
 );
+
+-- Relationships
+-- Employees.id = ComplianceTraining.employee_id
+-- Employees.department = Departments.name
