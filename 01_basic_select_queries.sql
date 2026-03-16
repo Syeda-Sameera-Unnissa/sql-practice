@@ -13,6 +13,12 @@ SELECT * FROM Employees;
 SELECT last_name
 FROM Employees;
 
+SELECT first_name
+FROM Employees;
+
+SELECT id
+FROM Employees;
+
 -- Select multiple columns
 SELECT last_name, first_name, id
 FROM Employees;
