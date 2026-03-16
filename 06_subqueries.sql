@@ -1,1 +1,5 @@
-
+-- ==================================================
+-- File: 06_subqueries.sql
+-- Description: SQL subqueries used within SELECT and WHERE clauses
+-- Author: Sameera
+-- ==================================================
