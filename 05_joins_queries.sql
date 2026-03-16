@@ -1,1 +1,5 @@
-
+-- ==================================================
+-- File: 05_joins_queries.sql
+-- Description: SQL JOIN queries combining data from multiple tables
+-- Author: Sameera
+-- ==================================================
