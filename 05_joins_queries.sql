@@ -23,3 +23,12 @@ SELECT first_name, last_name, date_complete
 FROM Employees
 LEFT JOIN ComplianceTraining
 ON Employees.id = ComplianceTraining.employee_id;
+
+
+-- Employees with department and training status
+SELECT e.first_name, e.last_name, d.state, c.date_complete
+FROM Employees e
+LEFT JOIN Departments d
+ON e.department = d.name
+LEFT JOIN ComplianceTraining c
+ON e.id = c.employee_id;
