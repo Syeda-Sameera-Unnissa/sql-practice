@@ -19,10 +19,10 @@ ON e.id = d.office_manager_id;
 
 
 -- Left join example
-SELECT first_name, last_name, date_complete
-FROM Employees
-LEFT JOIN ComplianceTraining
-ON Employees.id = ComplianceTraining.employee_id;
+SELECT e.first_name, e.last_name, c.date_complete
+FROM Employees e
+LEFT JOIN ComplianceTraining c
+ON e.id = c.employee_id;
 
 
 -- Employees with department and training status
