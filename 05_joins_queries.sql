@@ -4,18 +4,22 @@
 -- Description: Combining data from multiple tables
 -- =====================================================
 
--- INNER JOIN example
-SELECT Employees.first_name,
-       Employees.last_name,
-       Departments.department_name
+-- Join employees with departments using department name
+SELECT first_name, last_name, department, state
+FROM Employees
+JOIN Departments
+ON Employees.department = Departments.name;
+
+
+-- Inner join example
+SELECT first_name, last_name, name
 FROM Employees
 INNER JOIN Departments
-ON Employees.department_id = Departments.id;
+ON Employees.id = Departments.office_manager_id;
 
--- LEFT JOIN example
-SELECT Employees.first_name,
-       Employees.last_name,
-       Departments.department_name
+
+-- Left join example
+SELECT first_name, last_name, date_complete
 FROM Employees
-LEFT JOIN Departments
-ON Employees.department_id = Departments.id;
+LEFT JOIN ComplianceTraining
+ON Employees.id = ComplianceTraining.employee_id;
