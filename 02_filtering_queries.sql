@@ -27,10 +27,10 @@ FROM Employees
 WHERE department = 'Sales';
 
 
--- Case insensitive search using LIKE
+-- Case-insensitive search using LOWER function
 SELECT *
 FROM Employees
-WHERE department LIKE 'sales';
+WHERE LOWER(department) = 'sales';
 
 
 -- Filter employees with tshirt size L
