@@ -103,14 +103,14 @@ WHERE last_name LIKE '_a%';
 -- Employees not in Sales department
 SELECT first_name, last_name, department
 FROM Employees
-WHERE department IS NOT 'Sales';
+WHERE department != 'Sales';
 
 
 -- Employees not in Sales and tshirt size not L
 SELECT first_name, last_name, department, tshirt_size
 FROM Employees
-WHERE department IS NOT 'Sales'
-AND tshirt_size IS NOT 'L';
+WHERE department != 'Sales'
+AND tshirt_size != 'L';
 
 
 -- Employees in Sales OR Marketing department
