@@ -12,20 +12,34 @@ SELECT department, COUNT(department)
 FROM Employees
 GROUP BY department;
 
--- Count employees per department sorted
+
+-- Count employees per department and sort
 SELECT department, COUNT(department)
 FROM Employees
 GROUP BY department
 ORDER BY department;
 
--- Departments with less than 10 employees
+
+-- Departments with fewer than 10 employees
 SELECT department, COUNT(department)
 FROM Employees
 GROUP BY department
 HAVING COUNT(department) < 10
 ORDER BY department DESC;
 
--- Count employees by tshirt size
-SELECT tshirt_size, COUNT(*)
+
+-- Alias column name for count
+SELECT department,
+       COUNT(department) AS NumberOfEmployees
 FROM Employees
-GROUP BY tshirt_size;
+GROUP BY department
+HAVING NumberOfEmployees < 10
+ORDER BY department;
+
+
+-- Count employees by tshirt size
+SELECT tshirt_size,
+       COUNT(*) AS Total
+FROM Employees
+GROUP BY tshirt_size
+HAVING tshirt_size IS NOT NULL;
