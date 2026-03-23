@@ -7,32 +7,44 @@
 -- AGGREGATION FUNCTIONS
 -- ======================================
 
+-- Calculate total number of desks across departments
+SELECT SUM(num_desks)
+FROM Departments;
+
+
 -- Count employees with more than 20 vacations
 SELECT COUNT(id)
 FROM Employees
 WHERE vacation_taken > 20;
 
--- Total desks in departments
-SELECT SUM(num_desks)
-FROM Departments;
 
--- Average vacations taken
+-- Calculate average vacations taken by employees
 SELECT AVG(vacation_taken)
 FROM Employees;
+
+
+-- Average vacations for Marketing department
+SELECT AVG(vacation_taken)
+FROM Employees
+WHERE department = 'Marketing';
+
 
 -- Minimum vacations taken
 SELECT MIN(vacation_taken)
 FROM Employees;
 
+
 -- Maximum vacations taken
 SELECT MAX(vacation_taken)
 FROM Employees;
 
--- Distinct tshirt sizes
+
+-- Get unique tshirt sizes
 SELECT DISTINCT tshirt_size
 FROM Employees;
 
--- Distinct tshirt sizes excluding NULL
+
+-- Get unique tshirt sizes excluding NULL
 SELECT DISTINCT tshirt_size
 FROM Employees
 WHERE tshirt_size IS NOT NULL;
