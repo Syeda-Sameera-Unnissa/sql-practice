@@ -5,17 +5,17 @@
 -- =====================================================
 
 -- Join employees with departments using department name
-SELECT first_name, last_name, department, state
-FROM Employees
-JOIN Departments
-ON Employees.department = Departments.name;
+SELECT e.first_name, e.last_name, e.department, d.state
+FROM Employees e
+JOIN Departments d
+ON e.department = d.name;
 
 
 -- Inner join example
-SELECT first_name, last_name, name
-FROM Employees
-INNER JOIN Departments
-ON Employees.id = Departments.office_manager_id;
+SELECT e.first_name, e.last_name, d.name
+FROM Employees e
+INNER JOIN Departments d
+ON e.id = d.office_manager_id;
 
 
 -- Left join example
