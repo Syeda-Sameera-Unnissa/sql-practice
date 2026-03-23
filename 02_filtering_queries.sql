@@ -9,19 +9,6 @@ SELECT first_name, last_name
 FROM Employees
 WHERE id = 10;
 
-
--- Limit results to first 10 rows
-SELECT *
-FROM Employees
-LIMIT 10;
-
-
--- Limit results with offset
-SELECT *
-FROM Employees
-WHERE tshirt_size = 'L'
-LIMIT 1 OFFSET 10;
-
 -- Filter employees belonging to Service department
 SELECT *
 FROM Employees
@@ -124,3 +111,17 @@ OR department = 'Marketing';
 SELECT first_name, last_name
 FROM Employees
 WHERE first_name <> 'Riki';
+
+-- ======================================
+-- RESULT CONTROL
+-- ======================================
+
+-- Limit results to first 10 rows
+SELECT *
+FROM Employees
+LIMIT 10;
+
+-- Limit with offset (pagination)
+SELECT *
+FROM Employees
+LIMIT 5 OFFSET 10;
