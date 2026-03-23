@@ -7,24 +7,22 @@
 -- BASIC SELECT QUERIES
 -- =====================================================
 -- Select all columns from Employees table
-SELECT * FROM Employees;
+SELECT *
+FROM Employees;
 
--- Select specific column
+
+-- Select only last name column
 SELECT last_name
 FROM Employees;
 
-SELECT first_name
-FROM Employees;
-
-SELECT id
-FROM Employees;
 
 -- Select multiple columns
 SELECT last_name, first_name, id
 FROM Employees;
 
--- Using column aliases
-SELECT last_name AS "Last Name",
-       first_name AS "First Name",
-       id AS "Employee ID"
+
+-- Rename columns using AS keyword
+SELECT last_name AS 'Last Name',
+       first_name AS 'First Name',
+       id
 FROM Employees;
