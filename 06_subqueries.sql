@@ -4,19 +4,27 @@
 -- Description: Queries nested inside another query
 -- =====================================================
 
--- Retrieve employees whose vacation taken is above average
-SELECT first_name, last_name
-FROM Employees
-WHERE vacation_taken >
-      (SELECT AVG(vacation_taken)
-       FROM Employees);
-
--- Retrieve employees working in the department with maximum desks
+-- Employee with highest vacation taken
 SELECT *
 FROM Employees
-WHERE department_id =
-      (SELECT id
+WHERE vacation_taken =
+      (SELECT MAX(vacation_taken) FROM Employees);
+
+
+-- Employees whose department is located in CA
+SELECT *
+FROM Employees
+WHERE department =
+      (SELECT name
        FROM Departments
-       WHERE num_desks =
-             (SELECT MAX(num_desks)
-              FROM Departments));
+       WHERE state = 'CA');
+
+
+-- Employees working in departments located in OK
+SELECT *
+FROM Employees
+WHERE department IN
+      (SELECT name
+       FROM Departments
+       WHERE state = 'OK')
+ORDER BY department;
