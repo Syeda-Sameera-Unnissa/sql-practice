@@ -27,7 +27,7 @@ FROM Employees
 WHERE department = 'Sales';
 
 
--- Case-insensitive search using LOWER function
+-- Case-insensitive search using LOWER() for consistent comparison
 SELECT *
 FROM Employees
 WHERE LOWER(department) = 'sales';
