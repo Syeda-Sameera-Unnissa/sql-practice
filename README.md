@@ -211,7 +211,7 @@ Indicates resource-heavy departments
 
 ---
 
-🔨 Project: E-Commerce Sales Analysis
+## 🔨 Project: E-Commerce Sales Analysis
 
 Status: ⬜ Upcoming (Week 3 of my learning plan)
 Location: /ecommerce-analysis-project/
