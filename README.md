@@ -45,7 +45,13 @@ sql-practice/
 ├── 06_subqueries.sql
 ├── 07_practice_queries_other_schema.sql
 ├── 08_sql_interview_questions.sql
-└── 09_sql-case-study-analysis/
+├── 09_sql-case-study-analysis/
+│
+├── 10_window_functions.sql (in progress)
+├── 11_cte_and_views.sql (in progress)
+├── 12_complex_real_world_queries.sql (in progress)
+│
+└── ecommerce-analysis-project/ (coming soon)
 ```
 
 ---
@@ -64,7 +70,15 @@ sql-practice/
 | 8 | 08_sql_interview_questions.sql | Common interview questions | ✅ |
 | 9 | 09_sql-case-study-analysis | Case study analysis | ✅ |
 
-**Coming soon:** Window Functions, CTEs & Views, and an end-to-end E-Commerce Sales Analysis project using a real Kaggle dataset.
+### 🟡 In Progress
+
+| # | File | Topics | Status |
+|---|------|--------|--------|
+| 10 | 10_window_functions.sql | ROW_NUMBER, RANK, DENSE_RANK, LEAD, LAG, PARTITION BY | ⬜ |
+| 11 | 11_cte_and_views.sql | CTEs, Recursive CTEs, Views, Temporary Tables | ⬜ |
+| 12 | 12_complex_real_world_queries.sql | Multi-concept queries combining all skills | ⬜ |
+
+**Coming soon:** End-to-end E-Commerce Sales Analysis project using a real Kaggle dataset.
 
 ---
 
