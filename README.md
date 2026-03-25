@@ -89,17 +89,74 @@ sql-practice/
 
 ## 🗄️ Database Setup
 
-### Quick Setup
+This project uses a custom-built schema with three tables:
+
+* `Employees`
+* `Departments`
+* `ComplianceTraining`
+
+---
+
+### **Schema Overview**
 
 ```sql
--- Step 1: Create database and tables
-SOURCE database_schema.sql;
+CREATE TABLE Employees (
+    id INT,
+    first_name VARCHAR(50),
+    last_name VARCHAR(50),
+    department VARCHAR(50),
+    start_date DATE,
+    tshirt_size VARCHAR(5),
+    vacation_taken INT
+);
 
--- Step 2: Insert sample data
-SOURCE sample_data.sql;
+CREATE TABLE Departments (
+    id INT,
+    name VARCHAR(100),
+    address VARCHAR(200),
+    office_manager_id INT,
+    num_desks INT,
+    state VARCHAR(50)
+);
 
--- Step 3: Start practicing with any file
-SOURCE 01_basic_select_queries.sql;
+CREATE TABLE ComplianceTraining (
+    employee_id INT,
+    date_complete DATE
+);
+```
+
+---
+
+### **Relationships**
+
+* `Employees.id = ComplianceTraining.employee_id`
+* `Employees.department = Departments.name`
+
+---
+
+### **Sample Data**
+
+Sample data is included in `sample_data.sql` with:
+
+* 100 Employees
+* 10 Departments
+* Compliance training records for all employees
+
+👉 Example data snippet: 
+
+---
+
+### **Quick Setup**
+
+```bash
+# Step 1: Create schema
+mysql -u root -p < database_schema.sql
+
+# Step 2: Insert sample data
+mysql -u root -p < sample_data.sql
+
+# Step 3: Run practice queries
+mysql -u root -p < 01_basic_select_queries.sql
 ```
 
 ---
