@@ -202,19 +202,19 @@ FROM Employees
 GROUP BY department
 ORDER BY total_employees DESC
 LIMIT 5;
-
-Insight:
-
-Engineering and Services have the highest employee count
-Indicates resource-heavy departments
 ```
+
+**Insight:**
+
+* Engineering and Services have the highest employee count
+* Indicates resource-heavy departments
 
 ---
 
 ## 🔨 Project: E-Commerce Sales Analysis
 
-Status: ⬜ Upcoming (Week 3 of my learning plan)
-Location: /ecommerce-analysis-project/
+**Status:** ⬜ Upcoming *(Week 3 of my learning plan)*
+**Location:** `/ecommerce-analysis-project/`
 
 ---
 
