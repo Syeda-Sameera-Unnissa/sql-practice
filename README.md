@@ -187,7 +187,7 @@ mysql -u root -p < 01_basic_select_queries.sql
 
 | Test                          | Date     | Score | Target |
 | ----------------------------- | -------- | ----- | ------ |
-| First SQL Test (18 questions) | `[DATE]` | 72%   | 100%   |
+| First SQL Test (18 questions) | `[19/3/2026]` | 72%   | 100%   |
 | HackerRank SQL Assessment     | —        | —     | 85%+   |
 
 ---
@@ -210,10 +210,10 @@ Indicates resource-heavy departments
 
 ---
 
-## 🔨 Project: E-Commerce Sales Analysis
+🔨 Project: E-Commerce Sales Analysis
 
-**Status:** ⬜ Upcoming *(Week 3 of my learning plan)*  
-**Location:** `/ecommerce-analysis-project/`
+Status: ⬜ Upcoming (Week 3 of my learning plan)
+Location: /ecommerce-analysis-project/
 
 ---
 
