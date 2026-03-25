@@ -1,4 +1,8 @@
 # 📊 SQL Practice & Projects
+> 🚀 SQL practice repository covering fundamentals to advanced concepts with real-world project implementation.
+![SQL](https://img.shields.io/badge/SQL-Intermediate-blue)
+![Database](https://img.shields.io/badge/Database-MySQL-orange)
+![Status](https://img.shields.io/badge/Progress-In%20Progress-yellow)
 
 💡 This repository reflects my transition into technical roles through hands-on SQL practice and real-world problem solving.
 
@@ -142,7 +146,7 @@ Sample data is included in `sample_data.sql` with:
 * 10 Departments
 * Compliance training records for all employees
 
-👉 Example data snippet: 
+👉 Example data snippet available in `sample_data.sql` (100+ rows of realistic data)
 
 ---
 
@@ -189,7 +193,7 @@ mysql -u root -p < 01_basic_select_queries.sql
 
 ## 🔨 Project: E-Commerce Sales Analysis
 
-**Status:** ⬜ Upcoming *(Week 3 of my learning plan)*
+**Status:** ⬜ Upcoming *(Week 3 of my learning plan)*  
 **Location:** `/ecommerce-analysis-project/`
 
 ---
