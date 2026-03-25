@@ -4,7 +4,8 @@
 ![Database](https://img.shields.io/badge/Database-MySQL-orange)
 ![Status](https://img.shields.io/badge/Progress-In%20Progress-yellow)
 
-💡 This repository reflects my transition into technical roles through hands-on SQL practice and real-world problem solving.
+
+💡 This repository reflects my transition into technical roles through hands-on SQL practice, real-world problem solving, and structured learning.
 
 ---
 
@@ -188,6 +189,24 @@ mysql -u root -p < 01_basic_select_queries.sql
 | ----------------------------- | -------- | ----- | ------ |
 | First SQL Test (18 questions) | `[DATE]` | 72%   | 100%   |
 | HackerRank SQL Assessment     | —        | —     | 85%+   |
+
+---
+
+## 📊 Sample Analysis
+
+### Top 5 Departments by Employee Count
+
+```sql
+SELECT department, COUNT(*) AS total_employees
+FROM Employees
+GROUP BY department
+ORDER BY total_employees DESC
+LIMIT 5;
+
+Insight:
+
+Engineering and Services have the highest employee count
+Indicates resource-heavy departments
 
 ---
 
