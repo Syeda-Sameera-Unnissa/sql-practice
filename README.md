@@ -207,6 +207,7 @@ Insight:
 
 Engineering and Services have the highest employee count
 Indicates resource-heavy departments
+```
 
 ---
 
