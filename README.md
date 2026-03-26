@@ -32,6 +32,7 @@ This repository documents my structured journey of learning SQL from fundamental
 ---
 
 ## 📁 Repository Structure
+```
 sql-practice/
 │
 ├── database_schema.sql ── Table definitions with constraints
@@ -52,7 +53,7 @@ sql-practice/
 │
 ├── ecommerce-analysis-project/ ── (Coming Soon)
 └── README.md
-
+```
 
 ---
 
@@ -120,6 +121,7 @@ CREATE TABLE ComplianceTraining (
 ---
 
 ### Quick Setup
+```
 # Step 1: Create schema
 mysql -u root -p < database_schema.sql
 
@@ -128,8 +130,10 @@ mysql -u root -p < sample_data.sql
 
 # Step 3: Run any practice file
 mysql -u root -p < 01_basic_select_queries.sql
+```
 
-### 📊 Sample Query
+## 📊 Sample Query
+```
 Top 5 Departments by Employee Count
 
 SELECT department, COUNT(*) AS total_employees
@@ -137,6 +141,7 @@ FROM Employees
 GROUP BY department
 ORDER BY total_employees DESC
 LIMIT 5;
+```
 
 ## 📈 Skills Confidence
 
