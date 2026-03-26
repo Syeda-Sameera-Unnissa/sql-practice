@@ -1,7 +1,10 @@
--- Author: Sameera
--- Repository: sql-practice
--- Topic: Database Schema
--- Description: Defines the structure of the database tables used in this SQL practice repository.
+-- ======================================
+-- AUTHOR: Sameera
+-- REPOSITORY: sql-practice
+-- FILE: database_schema.sql
+-- TOPIC: Database Schema Definition
+-- DESCRIPTION: Defines the structure of all database tables with constraints and relationships
+-- ======================================
 
 CREATE TABLE Employees (
     id INT PRIMARY KEY,
