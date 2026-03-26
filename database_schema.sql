@@ -4,26 +4,26 @@
 -- Description: Defines the structure of the database tables used in this SQL practice repository.
 
 CREATE TABLE Employees (
-    id INT,
-    first_name VARCHAR(50),
-    last_name VARCHAR(50),
-    department VARCHAR(50),
+    id INT PRIMARY KEY,
+    first_name VARCHAR(50) NOT NULL,
+    last_name VARCHAR(50) NOT NULL,
+    department VARCHAR(50) NOT NULL,
     start_date DATE,
     tshirt_size VARCHAR(5),
-    vacation_taken INT
+    vacation_taken DECIMAL(5,2)  -- Your data has decimals!
 );
 
 CREATE TABLE Departments (
-    id INT,
-    name VARCHAR(100),
+    id INT PRIMARY KEY,
+    name VARCHAR(100) UNIQUE NOT NULL,
     address VARCHAR(200),
-    office_manager_id INT,
+    office_manager_id INT REFERENCES Employees(id),
     num_desks INT,
     state VARCHAR(50)
 );
 
 CREATE TABLE ComplianceTraining (
-    employee_id INT,
+    employee_id INT REFERENCES Employees(id),
     date_complete DATE
 );
 
