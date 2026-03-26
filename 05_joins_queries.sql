@@ -10,7 +10,6 @@
 -- JOIN QUERIES
 -- ======================================
 
-
 -- Join employees with departments using department name
 SELECT e.first_name, e.last_name, e.department, d.state
 FROM Employees e
