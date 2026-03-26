@@ -6,7 +6,6 @@
 -- DESCRIPTION: Fundamental SQL SELECT queries including column selection, aliases, concatenation, and arithmetic
 -- ======================================
 
-
 -- ======================================
 -- BASIC SELECT QUERIES
 -- ======================================
