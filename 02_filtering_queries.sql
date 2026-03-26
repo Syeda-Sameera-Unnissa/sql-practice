@@ -6,7 +6,6 @@
 -- DESCRIPTION: SQL queries demonstrating filtering using WHERE, LIKE, AND, OR, LIMIT, and comparison operators
 -- ======================================
 
-
 -- ======================================
 -- FILTER QUERIES
 -- ======================================
