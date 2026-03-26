@@ -1,8 +1,12 @@
--- ==================================================
--- File: 04_group_by_queries.sql
--- Description: SQL GROUP BY, ORDER BY and HAVING clause examples
--- Author: Sameera
--- ==================================================
+-- ======================================
+-- AUTHOR: Sameera
+-- REPOSITORY: sql-practice
+-- FILE: 04_group_by_queries.sql
+-- TOPIC: GROUP BY and HAVING Clauses
+-- DESCRIPTION: Grouping data with GROUP BY, filtering groups with HAVING, and sorting with ORDER BY
+-- ======================================
+
+
 -- ======================================
 -- GROUP BY QUERIES
 -- ======================================
