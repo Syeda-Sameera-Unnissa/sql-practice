@@ -1,0 +1,11 @@
+-- ======================================
+-- AUTHOR: Sameera
+-- REPOSITORY: sql-practice
+-- FILE: 07_window_functions.sql
+-- TOPIC: Window Functions
+-- DESCRIPTION: SQL window functions including ROW_NUMBER, RANK, DENSE_RANK, LAG, LEAD, and PARTITION BY
+-- ======================================
+
+-- ======================================
+-- WINDOW FUNCTIONS
+-- ======================================
