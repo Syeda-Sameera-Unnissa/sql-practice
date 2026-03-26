@@ -35,23 +35,23 @@ This repository documents my structured journey of learning SQL from fundamental
 ```
 sql-practice/
 │
-├── database_schema.sql ── Table definitions with constraints
-├── sample_data.sql ── 100 employees, 10 departments, training records
+├── database_schema.sql                  ── Table definitions with constraints
+├── sample_data.sql                      ── 100 employees, 10 departments, training records
 │
-├── 01_basic_select_queries.sql ── Fundamentals
-├── 02_filtering_queries.sql ── WHERE, LIKE, IN
-├── 03_aggregation_queries.sql ── COUNT, SUM, AVG
-├── 04_group_by_queries.sql ── GROUP BY, HAVING
-├── 05_joins_queries.sql ── All JOIN types
-├── 06_subqueries.sql ── Nested queries
-├── 07_window_functions.sql ── ROW_NUMBER, RANK, LAG
-├── 08_cte_and_views.sql ── WITH, CREATE VIEW
-├── 09_complex_real_world_queries.sql ── Multi-concept queries
+├── 01_basic_select_queries.sql          ── Fundamentals
+├── 02_filtering_queries.sql             ── WHERE, LIKE, IN
+├── 03_aggregation_queries.sql           ── COUNT, SUM, AVG
+├── 04_group_by_queries.sql              ── GROUP BY, HAVING
+├── 05_joins_queries.sql                 ── All JOIN types
+├── 06_subqueries.sql                    ── Nested queries
+├── 07_window_functions.sql              ── ROW_NUMBER, RANK, LAG
+├── 08_cte_and_views.sql                 ── WITH, CREATE VIEW
+├── 09_complex_real_world_queries.sql    ── Multi-concept queries
 ├── 10_practice_queries_other_schema.sql ── Cross-schema practice
-├── 11_sql_interview_questions.sql ── Interview Prep
-├── 12_sql_case_study_analysis.sql ── End-to-End Analysis
+├── 11_sql_interview_questions.sql       ── Interview Prep
+├── 12_sql_case_study_analysis.sql       ── End-to-End Analysis
 │
-├── ecommerce-analysis-project/ ── (Coming Soon)
+├── ecommerce-analysis-project/          ── (Coming Soon)
 └── README.md
 ```
 
@@ -104,7 +104,8 @@ CREATE TABLE ComplianceTraining (
     employee_id INT REFERENCES Employees(id),
     date_complete DATE
 );
-``` bash
+```
+
 ### Relationships
 
 - Employees.id = ComplianceTraining.employee_id  
@@ -131,7 +132,9 @@ mysql -u root -p < sample_data.sql
 
 # Step 3: Run any practice file
 mysql -u root -p < 01_basic_select_queries.sql
-`` `
+```
+
+---
 
 ## 📊 Sample Query
 
@@ -143,11 +146,11 @@ FROM Employees
 GROUP BY department
 ORDER BY total_employees DESC
 LIMIT 5;
-`` `
+```
 
 **Insight:** Engineering and Services have the highest employee count, indicating resource-heavy departments.
 
-**Insight:** Engineering and Services have the highest employee count, indicating resource-heavy departments.
+---
 
 ## 📈 Skills Confidence
 
