@@ -1,8 +1,10 @@
--- ==================================================
--- File: 01_basic_select_queries.sql
--- Description: Basic SQL SELECT statements practice
--- Author: Sameera
--- =====================================================
+-- ======================================
+-- AUTHOR: Sameera
+-- REPOSITORY: sql-practice
+-- FILE: 01_basic_select_queries.sql
+-- TOPIC: Basic SELECT Statements
+-- DESCRIPTION: Fundamental SQL SELECT queries including column selection, aliases, concatenation, and arithmetic
+-- ======================================
 -- =====================================================
 -- BASIC SELECT QUERIES
 -- =====================================================
