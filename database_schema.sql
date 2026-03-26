@@ -10,7 +10,7 @@ CREATE TABLE Employees (
     department VARCHAR(50) NOT NULL,
     start_date DATE,
     tshirt_size VARCHAR(5),
-    vacation_taken DECIMAL(5,2)  -- Your data has decimals!
+    vacation_taken DECIMAL(5,2)
 );
 
 CREATE TABLE Departments (
