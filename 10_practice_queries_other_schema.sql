@@ -1,7 +1,7 @@
 -- ======================================
 -- AUTHOR: Sameera
 -- REPOSITORY: sql-practice
--- FILE: 07_practice_queries_other_schema.sql
+-- FILE: 10_practice_queries_other_schema.sql
 -- TOPIC: SQL Practice with Alternate Schema (quizdata)
 -- DESCRIPTION: Applying SQL concepts on a different dataset to demonstrate adaptability
 -- ======================================
