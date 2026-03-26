@@ -10,7 +10,6 @@
 -- FILTER QUERIES
 -- ======================================
 
-
 -- Select first and last name for employee with ID = 10
 SELECT first_name, last_name
 FROM Employees
