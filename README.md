@@ -104,7 +104,7 @@ CREATE TABLE ComplianceTraining (
     employee_id INT REFERENCES Employees(id),
     date_complete DATE
 );
-```
+``` bash
 ### Relationships
 
 - Employees.id = ComplianceTraining.employee_id  
@@ -144,6 +144,8 @@ GROUP BY department
 ORDER BY total_employees DESC
 LIMIT 5;
 `` `
+
+**Insight:** Engineering and Services have the highest employee count, indicating resource-heavy departments.
 
 **Insight:** Engineering and Services have the highest employee count, indicating resource-heavy departments.
 
