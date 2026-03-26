@@ -32,26 +32,27 @@ This repository documents my structured journey of learning SQL from fundamental
 ## 📁 Repository Structure
 
 ```
-sql-practice/
+📁 sql-practice/
 │
 ├── database_schema.sql
 ├── sample_data.sql
 │
-├── 01_basic_select_queries.sql
-├── 02_filtering_queries.sql
-├── 03_aggregation_queries.sql
-├── 04_group_by_queries.sql
-├── 05_joins_queries.sql
-├── 06_subqueries.sql
-├── 07_practice_queries_other_schema.sql
-├── 08_sql_interview_questions.sql
-├── 09_sql-case-study-analysis/
+│── 01_basic_select_queries.sql        ── Fundamentals
+│── 02_filtering_queries.sql           ── WHERE, LIKE, IN
+│── 03_aggregation_queries.sql         ── COUNT, SUM, AVG
+│── 04_group_by_queries.sql            ── GROUP BY, HAVING
+│── 05_joins_queries.sql               ── All JOIN types
+│── 06_subqueries.sql                  ── Nested queries
+│── 07_window_functions.sql            ── ROW_NUMBER, RANK, LAG ✨
+│── 08_cte_and_views.sql               ── WITH, CREATE VIEW   ✨
+│── 09_complex_real_world_queries.sql   ── Multi-concept queries ✨
+│── 10_practice_queries_other_schema.sql── Cross-schema practice
 │
-├── 10_window_functions.sql (in progress)
-├── 11_cte_and_views.sql (in progress)
-├── 12_complex_real_world_queries.sql (in progress)
+│── 11_sql_interview_questions.sql      ── 🎯 Interview Prep
+│── 12_sql_case_study_analysis.sql      ── 📊 End-to-End Project
 │
-└── ecommerce-analysis-project/ (coming soon)
+├── ecommerce-analysis-project/         ── (Coming Soon)
+└── README.md
 ```
 
 ---
