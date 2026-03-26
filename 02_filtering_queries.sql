@@ -1,8 +1,16 @@
--- ==================================================
--- File: 02_filtering_queries.sql
--- Description: SQL queries demonstrating filtering using WHERE, LIKE, AND, OR, and LIMIT
--- Author: Sameera
--- ==================================================
+-- ======================================
+-- AUTHOR: Sameera
+-- REPOSITORY: sql-practice
+-- FILE: 02_filtering_queries.sql
+-- TOPIC: Filtering Data
+-- DESCRIPTION: SQL queries demonstrating filtering using WHERE, LIKE, AND, OR, LIMIT, and comparison operators
+-- ======================================
+
+
+-- ======================================
+-- FILTER QUERIES
+-- ======================================
+
 
 -- Select first and last name for employee with ID = 10
 SELECT first_name, last_name
