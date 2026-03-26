@@ -1,8 +1,15 @@
--- =====================================================
--- JOINS
--- Author: Sameera
--- Description: Combining data from multiple tables
--- =====================================================
+-- ======================================
+-- AUTHOR: Sameera
+-- REPOSITORY: sql-practice
+-- FILE: 05_joins_queries.sql
+-- TOPIC: SQL Joins
+-- DESCRIPTION: Combining data from multiple tables using INNER, LEFT, RIGHT, FULL OUTER, SELF, and CROSS joins
+-- ======================================
+
+-- ======================================
+-- JOIN QUERIES
+-- ======================================
+
 
 -- Join employees with departments using department name
 SELECT e.first_name, e.last_name, e.department, d.state
