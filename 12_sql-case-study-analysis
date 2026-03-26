@@ -1,9 +1,14 @@
--- ==========================================
--- File: 09_sql_case_study_analysis.sql
--- Description: Real-world SQL case study analysis
--- Author: Sameera
--- ==========================================
+-- ======================================
+-- AUTHOR: Sameera
+-- REPOSITORY: sql-practice
+-- FILE: 12_sql_case_study_analysis.sql
+-- TOPIC: SQL Case Study Analysis
+-- DESCRIPTION: End-to-end business case study solving real analytical problems using SQL
+-- ======================================
 
+-- ======================================
+-- CASE STUDY ANALYSIS
+-- ======================================
 
 -- Case Study:
 -- Analyze employee and department data to derive insights.
