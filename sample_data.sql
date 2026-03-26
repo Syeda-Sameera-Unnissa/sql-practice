@@ -1,6 +1,10 @@
--- =========================================
--- Sample Data for SQL Practice Database
--- =========================================
+-- ======================================
+-- AUTHOR: Sameera
+-- REPOSITORY: sql-practice
+-- FILE: sample_data.sql
+-- TOPIC: Sample Data for Practice
+-- DESCRIPTION: Inserts sample records into Employees, Departments, and ComplianceTraining tables
+-- ======================================
 
 INSERT INTO Employees (id, first_name, last_name, department, start_date, tshirt_size, vacation_taken) VALUES
 (1,'Krissie','Lates','Services','2004-04-02','XL',6.8),
