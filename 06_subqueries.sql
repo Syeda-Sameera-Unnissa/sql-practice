@@ -10,7 +10,6 @@
 -- SUBQUERIES
 -- ======================================
 
-
 -- Employee with highest vacation taken
 SELECT *
 FROM Employees
