@@ -1,8 +1,11 @@
--- ==================================================
--- File: 03_aggregation_queries.sql
--- Description: SQL aggregation functions such as COUNT, SUM, AVG, MIN, and MAX
--- Author: Sameera
--- ==================================================
+-- ======================================
+-- AUTHOR: Sameera
+-- REPOSITORY: sql-practice
+-- FILE: 03_aggregation_queries.sql
+-- TOPIC: Aggregation Functions
+-- DESCRIPTION: SQL aggregation functions including COUNT, SUM, AVG, MIN, MAX, ROUND, and conditional counting
+-- ======================================
+
 -- ======================================
 -- AGGREGATION FUNCTIONS
 -- ======================================
