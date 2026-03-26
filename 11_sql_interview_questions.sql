@@ -1,0 +1,11 @@
+-- ======================================
+-- AUTHOR: Sameera
+-- REPOSITORY: sql-practice
+-- FILE: 11_sql_interview_questions.sql
+-- TOPIC: SQL Interview Questions
+-- DESCRIPTION: Commonly asked SQL interview questions covering joins, subqueries, window functions, and edge cases
+-- ======================================
+
+-- ======================================
+
+-- ======================================
