@@ -32,3 +32,51 @@ LEFT JOIN Departments d
 ON e.department = d.name
 LEFT JOIN ComplianceTraining c
 ON e.id = c.employee_id;
+
+
+-- RIGHT JOIN
+SELECT e.first_name, d.name
+FROM Employees e
+RIGHT JOIN Departments d
+ON e.department = d.name;
+
+
+-- FULL OUTER JOIN
+SELECT e.first_name, d.name
+FROM Employees e
+FULL OUTER JOIN Departments d
+ON e.department = d.name;
+
+
+-- SELF JOIN 
+SELECT e1.first_name AS employee,
+       e2.first_name AS colleague
+FROM Employees e1
+JOIN Employees e2
+ON e1.department = e2.department
+AND e1.id <> e2.id;
+
+
+-- CROSS JOIN
+SELECT e.first_name, d.name
+FROM Employees e
+CROSS JOIN Departments d;
+
+
+-- JOIN with aggregation
+SELECT d.name,
+       COUNT(e.id) AS employee_count
+FROM Departments d
+LEFT JOIN Employees e
+ON d.name = e.department
+GROUP BY d.name
+ORDER BY employee_count DESC;
+
+
+-- JOIN with filtering
+SELECT e.first_name, e.last_name, d.state
+FROM Employees e
+JOIN Departments d
+ON e.department = d.name
+WHERE d.state = 'CA'
+AND e.vacation_taken > 15;
