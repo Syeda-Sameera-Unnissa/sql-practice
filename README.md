@@ -121,7 +121,8 @@ CREATE TABLE ComplianceTraining (
 ---
 
 ### Quick Setup
-```
+
+```bash
 # Step 1: Create schema
 mysql -u root -p < database_schema.sql
 
@@ -130,18 +131,21 @@ mysql -u root -p < sample_data.sql
 
 # Step 3: Run any practice file
 mysql -u root -p < 01_basic_select_queries.sql
-```
+`` `
 
 ## 📊 Sample Query
-```
-Top 5 Departments by Employee Count
 
+### Top 5 Departments by Employee Count
+
+```sql
 SELECT department, COUNT(*) AS total_employees
 FROM Employees
 GROUP BY department
 ORDER BY total_employees DESC
 LIMIT 5;
-```
+`` `
+
+**Insight:** Engineering and Services have the highest employee count, indicating resource-heavy departments.
 
 ## 📈 Skills Confidence
 
