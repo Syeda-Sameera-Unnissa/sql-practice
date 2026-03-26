@@ -48,3 +48,29 @@ FROM Employees;
 SELECT DISTINCT tshirt_size
 FROM Employees
 WHERE tshirt_size IS NOT NULL;
+
+
+-- Multiple aggregations in one query
+SELECT COUNT(*) AS total_employees,
+       AVG(vacation_taken) AS avg_vacation,
+       MAX(vacation_taken) AS max_vacation,
+       MIN(vacation_taken) AS min_vacation,
+       SUM(vacation_taken) AS total_vacation
+FROM Employees;
+
+
+-- COUNT with condition
+SELECT COUNT(CASE WHEN vacation_taken > 20
+             THEN 1 END) AS high_vacation_count
+FROM Employees;
+
+
+-- ROUND with AVG
+SELECT ROUND(AVG(vacation_taken), 2) AS avg_vacation
+FROM Employees;
+
+
+-- COUNT(*) vs COUNT(column)
+SELECT COUNT(*) AS all_rows,
+       COUNT(tshirt_size) AS non_null_sizes
+FROM Employees;
