@@ -1,8 +1,15 @@
--- =====================================================
+-- ======================================
+-- AUTHOR: Sameera
+-- REPOSITORY: sql-practice
+-- FILE: 06_subqueries.sql
+-- TOPIC: Subqueries
+-- DESCRIPTION: Nested queries including scalar, correlated, derived tables, EXISTS, and subquery vs JOIN comparison
+-- ======================================
+
+-- ======================================
 -- SUBQUERIES
--- Author: Sameera
--- Description: Queries nested inside another query
--- =====================================================
+-- ======================================
+
 
 -- Employee with highest vacation taken
 SELECT *
