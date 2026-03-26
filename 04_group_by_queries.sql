@@ -6,7 +6,6 @@
 -- DESCRIPTION: Grouping data with GROUP BY, filtering groups with HAVING, and sorting with ORDER BY
 -- ======================================
 
-
 -- ======================================
 -- GROUP BY QUERIES
 -- ======================================
