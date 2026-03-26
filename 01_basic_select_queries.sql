@@ -5,9 +5,11 @@
 -- TOPIC: Basic SELECT Statements
 -- DESCRIPTION: Fundamental SQL SELECT queries including column selection, aliases, concatenation, and arithmetic
 -- ======================================
--- =====================================================
+
+-- ======================================
 -- BASIC SELECT QUERIES
--- =====================================================
+-- ======================================
+
 -- Select all columns from Employees table
 SELECT *
 FROM Employees;
